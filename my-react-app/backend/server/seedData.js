@@ -1,0 +1,145 @@
+// Seed data for the StayEase hotel booking platform.
+// Prices are in South African Rand (ZAR) per night.
+
+export const seedHotels = [
+  {
+    id: 'h1',
+    name: 'The Cape Grand',
+    city: 'Cape Town',
+    country: 'South Africa',
+    address: '12 Beach Road, Camps Bay',
+    description:
+      'A luxurious beachfront hotel overlooking the Atlantic, with panoramic views of Table Mountain, an infinity pool, and fine dining inspired by the Cape.',
+    rating: 4.8,
+    reviews: 1243,
+    amenities: ['Free WiFi', 'Infinity pool', 'Spa', 'Restaurant', 'Gym', 'Airport shuttle', 'Bar', 'Room service'],
+    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&q=70',
+    rooms: [
+      { id: 'h1-r1', name: 'Deluxe Sea View', pricePerNight: 2450, capacity: 2, units: 4, size: 32, bed: 'King bed' },
+      { id: 'h1-r2', name: 'Family Suite', pricePerNight: 3900, capacity: 4, units: 2, size: 58, bed: 'King + 2 singles' },
+      { id: 'h1-r3', name: 'Standard Garden Room', pricePerNight: 1650, capacity: 2, units: 6, size: 26, bed: 'Queen bed' },
+    ],
+  },
+  {
+    id: 'h2',
+    name: 'Jozi Sky Tower Hotel',
+    city: 'Johannesburg',
+    country: 'South Africa',
+    address: '88 Maude Street, Sandton',
+    description:
+      'Sleek high-rise living in the heart of Sandton. Floor-to-ceiling city views, a rooftop bar, and effortless access to the business district.',
+    rating: 4.6,
+    reviews: 987,
+    amenities: ['Free WiFi', 'Rooftop bar', 'Gym', 'Conference rooms', 'Restaurant', 'Valet parking', 'Pool'],
+    image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=900&q=70',
+    rooms: [
+      { id: 'h2-r1', name: 'Executive City Room', pricePerNight: 1980, capacity: 2, units: 5, size: 30, bed: 'King bed' },
+      { id: 'h2-r2', name: 'Penthouse Suite', pricePerNight: 6200, capacity: 3, units: 1, size: 85, bed: 'King + sofa bed' },
+      { id: 'h2-r3', name: 'Business Classic', pricePerNight: 1450, capacity: 2, units: 8, size: 24, bed: 'Twin beds' },
+    ],
+  },
+  {
+    id: 'h3',
+    name: 'Durban Ocean Breeze',
+    city: 'Durban',
+    country: 'South Africa',
+    address: '5 Marine Parade, Golden Mile',
+    description:
+      'Wake up to the sound of waves on Durban’s Golden Mile. Family-friendly rooms, a lagoon-style pool, and the best bunny chow on the strip.',
+    rating: 4.4,
+    reviews: 654,
+    amenities: ['Free WiFi', 'Pool', 'Beach access', 'Kids club', 'Restaurant', 'Parking', 'Bar'],
+    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=70',
+    rooms: [
+      { id: 'h3-r1', name: 'Ocean Front Double', pricePerNight: 1350, capacity: 2, units: 6, size: 28, bed: 'Queen bed' },
+      { id: 'h3-r2', name: 'Family Sea View', pricePerNight: 2100, capacity: 4, units: 3, size: 48, bed: 'Queen + bunk beds' },
+    ],
+  },
+  {
+    id: 'h4',
+    name: 'Jacaranda Manor',
+    city: 'Pretoria',
+    country: 'South Africa',
+    address: '21 Arcadia Street, Arcadia',
+    description:
+      'A restored colonial manor shaded by jacaranda trees, blending old-world charm with modern comfort, just minutes from the Union Buildings.',
+    rating: 4.5,
+    reviews: 432,
+    amenities: ['Free WiFi', 'Garden', 'Breakfast included', 'Library lounge', 'Parking', 'Tea room'],
+    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=900&q=70',
+    rooms: [
+      { id: 'h4-r1', name: 'Manor Classic', pricePerNight: 1150, capacity: 2, units: 5, size: 25, bed: 'Queen bed' },
+      { id: 'h4-r2', name: 'Garden Cottage', pricePerNight: 1600, capacity: 3, units: 2, size: 40, bed: 'Queen + single' },
+    ],
+  },
+  {
+    id: 'h5',
+    name: 'Winelands Château',
+    city: 'Stellenbosch',
+    country: 'South Africa',
+    address: '7 Vineyard Lane, Stellenbosch',
+    description:
+      'A Cape Dutch-style estate surrounded by vineyards. Wine tastings at sunset, mountain biking trails, and fireplaces for cosy winter evenings.',
+    rating: 4.9,
+    reviews: 768,
+    amenities: ['Free WiFi', 'Wine tasting', 'Spa', 'Pool', 'Restaurant', 'Fireplace lounge', 'Cycling trails'],
+    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=70',
+    rooms: [
+      { id: 'h5-r1', name: 'Vineyard View Room', pricePerNight: 2750, capacity: 2, units: 4, size: 34, bed: 'King bed' },
+      { id: 'h5-r2', name: 'Château Suite', pricePerNight: 4800, capacity: 2, units: 2, size: 62, bed: 'Four-poster king' },
+    ],
+  },
+  {
+    id: 'h6',
+    name: 'Le Marais Boutique',
+    city: 'Paris',
+    country: 'France',
+    address: '34 Rue des Archives, Le Marais',
+    description:
+      'A chic boutique hotel tucked into a 17th-century Marais townhouse. Haussmann ceilings, espresso bars, and the Seine a short stroll away.',
+    rating: 4.7,
+    reviews: 1521,
+    amenities: ['Free WiFi', 'Breakfast included', 'Bar', 'Concierge', 'Pet friendly', 'Non-smoking rooms'],
+    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900&q=70',
+    rooms: [
+      { id: 'h6-r1', name: 'Petite Chambre', pricePerNight: 2100, capacity: 2, units: 4, size: 18, bed: 'Queen bed' },
+      { id: 'h6-r2', name: 'Marais Deluxe', pricePerNight: 3400, capacity: 2, units: 3, size: 28, bed: 'King bed' },
+      { id: 'h6-r3', name: 'Atelier Apartment', pricePerNight: 5200, capacity: 4, units: 1, size: 55, bed: 'King + sofa bed' },
+    ],
+  },
+  {
+    id: 'h7',
+    name: 'Bali Palm Retreat',
+    city: 'Ubud',
+    country: 'Indonesia',
+    address: 'Jl. Raya Sanggingan, Ubud',
+    description:
+      'Jungle villas with private infinity pools overlooking the Ayung valley. Daily yoga, Balinese spa rituals, and organic dining from our gardens.',
+    rating: 4.9,
+    reviews: 2103,
+    amenities: ['Free WiFi', 'Private pool', 'Spa', 'Yoga studio', 'Restaurant', 'Airport shuttle', 'Bar'],
+    image: 'https://images.unsplash.com/photo-1537640538966-79f369143f8f?w=900&q=70',
+    rooms: [
+      { id: 'h7-r1', name: 'Garden Villa', pricePerNight: 1850, capacity: 2, units: 5, size: 45, bed: 'King bed' },
+      { id: 'h7-r2', name: 'Valley Pool Villa', pricePerNight: 3600, capacity: 2, units: 3, size: 70, bed: 'King bed' },
+      { id: 'h7-r3', name: 'Two-Bedroom Family Villa', pricePerNight: 5400, capacity: 5, units: 2, size: 110, bed: '2 kings + single' },
+    ],
+  },
+  {
+    id: 'h8',
+    name: 'Manhattan Loft Hotel',
+    city: 'New York',
+    country: 'United States',
+    address: '215 W 28th Street, Chelsea',
+    description:
+      'Industrial-chic lofts in Chelsea with soaring windows, a 24-hour fitness studio, and the High Line at your doorstep.',
+    rating: 4.5,
+    reviews: 1876,
+    amenities: ['Free WiFi', 'Gym', 'Rooftop terrace', 'Bar', 'Pet friendly', '24h front desk', 'Parking'],
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=70',
+    rooms: [
+      { id: 'h8-r1', name: 'Studio Loft', pricePerNight: 3200, capacity: 2, units: 6, size: 30, bed: 'Queen bed' },
+      { id: 'h8-r2', name: 'Skyline Suite', pricePerNight: 6800, capacity: 3, units: 2, size: 55, bed: 'King + sofa bed' },
+    ],
+  },
+]

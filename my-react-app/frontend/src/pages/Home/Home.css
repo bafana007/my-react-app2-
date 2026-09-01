@@ -1,0 +1,137 @@
+.hero {
+  background:
+    linear-gradient(rgba(10, 25, 47, 0.72), rgba(10, 25, 47, 0.82)),
+    url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=70')
+      center / cover no-repeat,
+    linear-gradient(135deg, #2e6fd8, #0f2540);
+  color: #fff;
+  padding: 4.5rem 1.5rem 5rem;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.hero-accent {
+  color: #f5a623;
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 620px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.home-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0f2540;
+  letter-spacing: -0.01em;
+}
+
+.see-all {
+  color: #2e6fd8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.see-all:hover {
+  text-decoration: underline;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.error-state {
+  background: #fdecea;
+  border: 1px solid #f5c6c0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #a93226;
+  font-weight: 600;
+}
+
+.error-detail {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0.4rem 0 0;
+}
+
+.error-detail code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.perks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.perk {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(15, 37, 64, 0.06);
+}
+
+.perk-icon {
+  font-size: 1.6rem;
+}
+
+.perk h3 {
+  margin: 0.5rem 0 0.35rem;
+  font-size: 1.05rem;
+  color: #0f2540;
+}
+
+.perk p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5a6b7f;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .perks {
+    grid-template-columns: 1fr;
+  }
+}
